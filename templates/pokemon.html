@@ -1,0 +1,21 @@
+<!doctype html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Pokemon Website</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<meta name="description" content="A Parody Website for Labs">
+	</head>
+
+	<body>
+		
+		{% if query_type == 'id' %}
+			<h1> {{r.name.capitalize()}} has id {{r.id}} </h1>
+		{% else %}
+			<h1> The pokemon with id {{r.id}} is {{r.name}}</h1>
+		{% endif %}
+
+	</body>
+
+</html>
